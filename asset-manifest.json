@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/jeremiech/artcouncil.git/static/css/main.6ae591b3.css",
+    "main.js": "/jeremiech/artcouncil.git/static/js/main.4f44e835.js",
+    "static/js/787.94ebe184.chunk.js": "/jeremiech/artcouncil.git/static/js/787.94ebe184.chunk.js",
+    "static/media/impala.jpg": "/jeremiech/artcouncil.git/static/media/impala.134fd6591683f4d3feb8.jpg",
+    "static/media/logo.svg": "/jeremiech/artcouncil.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/jeremiech/artcouncil.git/index.html",
+    "main.6ae591b3.css.map": "/jeremiech/artcouncil.git/static/css/main.6ae591b3.css.map",
+    "main.4f44e835.js.map": "/jeremiech/artcouncil.git/static/js/main.4f44e835.js.map",
+    "787.94ebe184.chunk.js.map": "/jeremiech/artcouncil.git/static/js/787.94ebe184.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ae591b3.css",
+    "static/js/main.4f44e835.js"
+  ]
+}
