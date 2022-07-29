@@ -1,6 +1,9 @@
 import React from 'react'
 import impala from '../pics/impala.jpg'
+import {useState} from 'react'
 function Register() {
+    const[names,setNames]=useState("")
+    const[email,setEmail]=useState("")
   return (
     <>
     <div class="regist">
@@ -14,31 +17,31 @@ function Register() {
                 </div>
                 <div class="regiscont">
                     <div class="regpage">
-                            <label>Full names</label>
+                            <label className='subdetails'>Full names</label>
                         <input type="text" name="fn"/>
                     
-                            <label>date of Birth</label>
+                            <label className='subdetails'>date of Birth</label>
                             <input type="date" name="dob"/>                    
-                        <label>email</label>
+                        <label className='subdetails'>email</label>
                         <input type="text" name="eml"/>
                         
                                         </div>
                                         <div class="regpage">
-                                            <label>Category</label>
-                                            <input type="text" name="cat"/>
-                                            Address
+                                        <label className='subdetails'>Category</label>  
+                                             <select name="cat">
+                                                <option value="paint">paint</option>
+                                                <option value="paint">singer</option>
+                                                <option value="paint">ibohero</option>
+
+                                             </select>  
+                                          <label className='subdetails'>cluster</label>  
                                              <select name="ad">
                                                 <option value="paint">paint</option>
                                                 <option value="paint">singer</option>
                                                 <option value="paint">ibohero</option>
 
                                              </select>   
-                                             <label>Gender</label>
-                                             <div class="sex">
-                                                <input type="radio" name="sx" value="male"/>Male &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" name="sx" value="female"/>Female
-                                             </div>
-
+                                          
                                             </div>
                 </div>
                 <div class="btn">
@@ -46,7 +49,7 @@ function Register() {
 
                 </div>
                 <div class="loged">
-                    <span>Alread have Registered <em><>Login</></em></span>
+                    <span>Alread have Registered <em style={{color:"orange"}}>Login</em></span>
 
                 </div>
             </div>

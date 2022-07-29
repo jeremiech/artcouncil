@@ -52,7 +52,7 @@ left:260px;
 .regpage>input[type='text'],select,input[type='email'],input[type='date']{
   width:100%;
   height: 28px;
-  border: none;
+  border: rgb(red, green, blue);
   border-radius: 5px;
   margin-bottom: 14px;
 }
@@ -90,4 +90,69 @@ left:260px;
 }
 .recontainer .loged{
   margin-top: 20px;
+}
+.sidebar{
+  width:180px;
+  height: 89vh;
+  /* margin-top: 60px; */
+  /* background: oran;  */
+  background: orange;
+
+}
+.subdetails{
+  font-weight: 12px;
+  padding: 5px 0px 0px2px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sidebar .logo{
+  width: 60px;
+  height: 20px;
+  background-color: rebeccapurple;
+}
+.logo .logoimg{
+  object-fit:cover;
+  object-position: center;
+  /* background: rgba(0, 0,0,0.6); */
+}
+.navpage{
+  position: absolute;
+  left: 200px;
+}
+.sideList{
+  padding: 0px;
+  list-style-type: none;
+  width:100%;
+  margin: 0px;
+}
+.sideList .rows{
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  
+
+}
+.icon{
+  flex: 20%;
+  display: grid;
+  color: white;
+}
+.sidetite{
+  flex: 80%;
+  font-family: 'font-bold';
+  text-decoration: none;
+  color:white;
+  flex-grow: 40px;
+}
+.sideList .rows:hover{
+  background-color: white;
+  color:black;
+  /* cursor: pointer; */
+}
+
+.navbar{
+  width:100vw;
+  height: 60px;
+  background-color: whitesmoke;
+
 }

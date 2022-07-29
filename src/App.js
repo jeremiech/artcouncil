@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Register from './components/Register';
+// import Register from './components/Register';
+// import SideBar from './components/SideBar';
+import {BrowserRouter} from 'react-router-dom'
+import MainPage from './components/MainPage';
 
 function App() {
   return (
-   <Register/>
+<BrowserRouter>
+<MainPage />
+</BrowserRouter>
   );
 }
 
