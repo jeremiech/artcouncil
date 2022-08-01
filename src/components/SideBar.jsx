@@ -1,18 +1,18 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { sideData } from './SideTitle'
-// import logo from '../pics/logo.jpg'
+import logo from '../pics/logo.jpg'
 export default function SideBar() {
     const datas=sideData
   return (
         <div className='sidebar'>
-    {datas.map((values,index)=>{
-        return(
-       <>
-            {/* <div className='logo'>
+              <div className='logo'>
             <img src={logo} className='logoimg' alt="artlogo" />
 
-            </div> */}
+            </div>
+    {datas.map((values,index)=>{
+        return(
+          
             <div key={index}  className='sideList'>
 
         <NavLink to={values.link} className='rows'>
@@ -21,7 +21,6 @@ export default function SideBar() {
         </NavLink>
         </div>
         
-       </>
         
         )
     }      
