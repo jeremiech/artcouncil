@@ -1,9 +1,28 @@
-import React from 'react'
 import impala from '../pics/impala.jpg'
-import {useState} from 'react'
-function Register() {
-    const[names,setNames]=useState("")
-    const[email,setEmail]=useState("")
+import React,{useState,useEffect} from 'react'
+import { category,clusters } from './sideComponent';
+
+
+const Register=()=> {
+        const [categories,setCategies]=useState([]);
+    const [cluster,setCluster]=useState([]);
+
+    // const[names,setNames]=useState("")
+    // const[email,setEmail]=useState("")
+ 
+
+
+useEffect(()=>{
+setCategies(category)
+},[])
+const handleCategory=id=>{
+    const clus=clusters.filter(ids=>(ids.categoryId===id))
+    setCluster(clus);
+    
+}
+
+
+
   return (
     <>
     <div class="regist">
@@ -13,7 +32,7 @@ function Register() {
             </div>
             <div class="recontainer">
                 <div class="heading">
-                    <span>Registration</span>
+                    <span>Registering Federation</span>
                 </div>
                 <div class="regiscont">
                     <div class="regpage">
@@ -28,19 +47,29 @@ function Register() {
                                         </div>
                                         <div class="regpage">
                                         <label className='subdetails'>Category</label>  
-                                             <select name="cat">
-                                                <option value="paint">paint</option>
-                                                <option value="paint">singer</option>
-                                                <option value="paint">ibohero</option>
-
+                                             <select id="cat" onChange={e=>handleCategory(e.target.value)} >
+                                            
+                                                <option value="-1" selected>Choose Category</option>
+                                                { categories && categories!==undefined 
+                                                    ?categories.map((value,index)=>{
+                                                        return(
+                                                            <option key={index} value={value.id}>{value.name}</option>
+                                                        )
+                                                        }):"No Category Chosen"}
+                                            
                                              </select>  
-                                          <label className='subdetails'>cluster</label>  
-                                             <select name="ad">
-                                                <option value="paint">paint</option>
-                                                <option value="paint">singer</option>
-                                                <option value="paint">ibohero</option>
+                                          <label className='subdetails'>Cluster</label>  
+                                          <select id="clid"  onChange={e=>e.target.value}>
+                                                <option value="-1" selected>Select Cluster</option>
+                                                {cluster&& cluster!==undefined 
+                                                ?cluster.map((value,index)=>{
+                                                    return(
+                                                        <option key={index} value={value.id}>{value.name}</option>
+                                                    )
+                                                }):"No Cluster has Chosen yet"
+                                                }
 
-                                             </select>   
+                                            </select>
                                           
                                             </div>
                 </div>

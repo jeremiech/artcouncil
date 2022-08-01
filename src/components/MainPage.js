@@ -7,11 +7,16 @@ function MainPage() {
   return (
     <React.Fragment>
 
-    <section>
+<div id='page-orientor' >
+<section>
+<div>
+    <SideBar/>
+    </div>
+  
+    </section>
     <div>
     <NavBar/>
     </div>
-    </section>
         <section className='navpage'>
         <div>
             <NavPage />
@@ -19,10 +24,9 @@ function MainPage() {
         </section>
         <section>
 
-            <div>
-    <SideBar/>
-    </div>
+
     </section>
+</div>
 
 </React.Fragment>
     )
