@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { sideData } from './SideTitle'
-import logo from '../pics/logo.jpg'
+import logo from '../pics/logo.png'
 export default function SideBar() {
     const datas=sideData
   return (

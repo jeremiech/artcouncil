@@ -39,10 +39,10 @@ const handleCategory=id=>{
                             <label className='subdetails'>Full names</label>
                         <input type="text" name="fn"/>
                     
-                            <label className='subdetails'>date of Birth</label>
-                            <input type="date" name="dob"/>                    
-                        <label className='subdetails'>email</label>
-                        <input type="text" name="eml"/>
+                            <label className='subdetails'>Tin</label>
+                            <input type="text" name="tin"/>                    
+                        <label className='subdetails'>Email</label>
+                        <input type="email" placeholder='abc@gmail.com' name="eml"/>
                         
                                         </div>
                                         <div class="regpage">
@@ -74,11 +74,11 @@ const handleCategory=id=>{
                                             </div>
                 </div>
                 <div class="btn">
-                    <input type="button" value="Next" />                 
+                    <input type="button" style={{fontFamily:"railway",fontSize:"20px"}} value="Register" />                 
 
                 </div>
                 <div class="loged">
-                    <span>Alread have Registered <em style={{color:"orange"}}>Login</em></span>
+                    <span>Alread have Registered <em style={{color:"#c5801a"}}>Login</em></span>
 
                 </div>
             </div>
